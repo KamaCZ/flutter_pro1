@@ -1,13 +1,22 @@
 import "package:flutter/material.dart";
 
-void main() {
-  runApp(MyApp());
-}
+// void main() {
+//   runApp(MyApp());
+// }
+
+void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
+  @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Text("FRU HAUGANS HOTEL"),
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text("FRU HAUGANS HOTEL"),
+        ),
+        body:
+            Text("Informations about the norwegian hotel and restaurant chain"),
+      ),
     );
   }
 }
